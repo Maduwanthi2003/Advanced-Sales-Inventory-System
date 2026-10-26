@@ -1,0 +1,388 @@
+
+/* WebAdmin Dashboard */
+
+.dash-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 17px;
+}
+
+.dash-heading h1 {
+    margin: 0;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: -.7px;
+    color: #071a47;
+}
+
+.dash-heading > span {
+    color: #7c91b0;
+    font-size: 12px;
+}
+
+.dash-heading b {
+    margin: 0 8px;
+    color: #b2c2d8;
+}
+
+.dash-stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    margin-bottom: 14px;
+}
+
+.dash-stat {
+    position: relative;
+    min-width: 0;
+    min-height: 132px;
+    padding: 15px 17px;
+    border-radius: 9px;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 3px 10px #0b428312;
+}
+
+.stat-sales {
+    background: linear-gradient(130deg, #06d5b2, #00ba91);
+}
+
+.stat-purchases {
+    background: linear-gradient(130deg, #248aff, #0063ee);
+}
+
+.stat-products {
+    background: linear-gradient(130deg, #ffa440, #ff8330);
+}
+
+.stat-low {
+    background: linear-gradient(130deg, #ff5377, #f43b65);
+}
+
+.stat-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.stat-top svg {
+    width: 27px;
+    height: 27px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.stat-top span {
+    opacity: .8;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.dash-stat p {
+    margin: 0 0 3px;
+    font-size: 13px;
+}
+
+.dash-stat strong {
+    display: block;
+    font-size: clamp(17px, 1.9vw, 25px);
+    line-height: 1.25;
+    font-weight: 750;
+    overflow-wrap: anywhere;
+}
+
+.dash-stat small {
+    display: block;
+    margin-top: 6px;
+    font-size: 11px;
+    opacity: .9;
+}
+
+.dash-charts {
+    display: grid;
+    grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr);
+    gap: 14px;
+    margin-bottom: 14px;
+}
+
+.dash-panel {
+    min-width: 0;
+    background: #fff;
+    border: 1px solid #dce9f8;
+    border-radius: 9px;
+    box-shadow: 0 2px 9px #123d7010;
+    padding: 13px 15px;
+}
+
+.panel-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.panel-heading h2 {
+    margin: 0;
+    color: #071a47;
+    font-size: 16px;
+    font-weight: 750;
+}
+
+.year-tag {
+    border: 1px solid #e2ebf7;
+    border-radius: 5px;
+    padding: 5px 9px;
+    font-size: 11px;
+    color: #375d90;
+}
+
+.sales-chart-wrap {
+    position: relative;
+    width: 100%;
+    height: 205px;
+}
+
+.sales-chart-wrap canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.stock-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    min-height: 205px;
+}
+
+.stock-donut {
+    width: 175px;
+    height: 175px;
+    aspect-ratio: 1;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e8eef7;
+}
+
+.donut-center {
+    width: 72%;
+    height: 72%;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.donut-center strong {
+    font-size: 24px;
+    line-height: 1.1;
+}
+
+.donut-center span {
+    margin-top: 4px;
+    color: #627c9f;
+    font-size: 10px;
+}
+
+.stock-legend {
+    flex: 1;
+    min-width: 0;
+}
+
+.stock-legend > div {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 15px;
+    font-size: 11px;
+    color: #36547f;
+}
+
+.stock-legend strong {
+    margin-left: auto;
+    font-size: 11px;
+}
+
+.legend-dot {
+    width: 9px;
+    height: 9px;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+.dot-green { background: #00c89b; }
+.dot-blue { background: #0878ff; }
+.dot-orange { background: #ff9b2e; }
+.dot-red { background: #ff3857; }
+
+.create-invoice-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 13px;
+    border-radius: 5px;
+    background: #0878ff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.create-invoice-btn:hover {
+    background: #005ed8;
+}
+
+.dash-table-scroll {
+    overflow-x: auto;
+}
+
+.dash-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 12px;
+}
+
+.dash-table th {
+    background: #edf5fc;
+    color: #234878;
+    font-weight: 700;
+    padding: 10px 12px;
+    white-space: nowrap;
+}
+
+.dash-table td {
+    padding: 10px 12px;
+    color: #385780;
+    border-bottom: 1px solid #edf2f9;
+}
+
+.dash-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.status-badge {
+    display: inline-block;
+    min-width: 75px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 8px;
+    font-size: 11px;
+    background: #e9f1fc;
+    color: #2361a6;
+}
+
+.status-paid {
+    background: #d8faeb;
+    color: #00956b;
+}
+
+.status-partial {
+    background: #fff0ce;
+    color: #b87b00;
+}
+
+.status-unpaid {
+    background: #ffe2e7;
+    color: #dc3755;
+}
+
+.view-invoice {
+    color: #0878ff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.empty-table {
+    text-align: center;
+    padding: 28px !important;
+    color: #7890ae !important;
+}
+
+.action-unavailable {
+    color: #9eafc5;
+}
+
+@media (max-width: 1200px) {
+    .dash-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .dash-charts {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .dash-heading h1 {
+        font-size: 22px;
+    }
+
+    .dash-stats {
+        gap: 10px;
+    }
+
+    .dash-stat {
+        min-height: 125px;
+        padding: 12px;
+    }
+
+    .dash-stat strong {
+        font-size: 17px;
+    }
+
+    .stock-content {
+        flex-wrap: wrap;
+    }
+
+    .stock-legend {
+        min-width: 160px;
+    }
+
+    .stock-donut {
+        width: 155px;
+        height: 155px;
+    }
+}
+
+@media (max-width: 370px) {
+    .dash-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .dash-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .dash-card-header {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .stock-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stock-legend {
+        min-width: 0;
+        width: 100%;
+    }
+}

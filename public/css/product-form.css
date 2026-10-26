@@ -1,0 +1,306 @@
+
+/* WEBADMIN - ADD & EDIT PRODUCT */
+
+.pf-page, .pf-page * {
+    box-sizing: border-box;
+}
+
+.pf-page {
+    width: 100%;
+    min-width: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #0a1d4d;
+}
+
+.pf-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.pf-heading h1 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 750;
+}
+
+.pf-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #6886b6;
+    font-size: 11px;
+}
+
+.pf-breadcrumb a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.pf-card {
+    padding: 14px;
+    background: #fff;
+    border: 1px solid #dce9fa;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(18,70,130,.06);
+}
+
+.pf-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.06fr);
+    gap: 16px;
+}
+
+.pf-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 0;
+}
+
+.pf-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.pf-field label {
+    color: #0b2054;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.pf-field label span {
+    color: #ec2945;
+}
+
+.pf-control {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    min-height: 30px;
+    border: 1px solid #d5e4f8;
+    border-radius: 5px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.pf-control:focus-within {
+    border-color: #006bff;
+    box-shadow: 0 0 0 3px rgba(0,107,255,.07);
+}
+
+.pf-icon {
+    width: 37px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #e1eaf8;
+    background: #fbfdff;
+    color: #2c508c;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.pf-control input,
+.pf-control select,
+.pf-control textarea {
+    width: 100%;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #183e7b;
+    font-family: inherit;
+    font-size: 11px;
+}
+
+.pf-control input,
+.pf-control select {
+    min-height: 30px;
+    padding: 6px 10px;
+}
+
+.pf-control textarea {
+    min-height: 77px;
+    padding: 11px;
+    resize: vertical;
+}
+
+.pf-control input::placeholder,
+.pf-control textarea::placeholder {
+    color: #8299bc;
+}
+
+.pf-textarea-control .pf-icon {
+    align-items: flex-start;
+    padding-top: 11px;
+}
+
+.pf-upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 145px;
+    border: 1.5px dashed #b8d0f5;
+    border-radius: 5px;
+    background: #f8fbff;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.pf-upload:hover {
+    border-color: #006bff;
+    background: #f3f8ff;
+}
+
+.pf-upload-instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    text-align: center;
+    color: #24477f;
+}
+
+.pf-upload-instructions svg {
+    width: 43px;
+    height: 43px;
+    fill: none;
+    stroke: #24477f;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.pf-upload-instructions strong {
+    font-size: 11px;
+}
+
+.pf-upload-instructions small {
+    font-size: 10px;
+    color: #8196b8;
+}
+
+.pf-preview {
+    width: 100%;
+    height: 143px;
+    object-fit: contain;
+    padding: 8px;
+}
+
+.pf-image-note {
+    color: #708bb3;
+    font-size: 10px;
+    text-align: center;
+}
+
+.pf-description-field {
+    margin-top: 4px;
+}
+
+.pf-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 15px;
+    padding-top: 12px;
+    border-top: 1px solid #e8f0fa;
+}
+
+.pf-cancel,
+.pf-save {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 34px;
+    padding: 0 16px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.pf-cancel {
+    color: #2b4c85;
+    background: #fff;
+    border: 1px solid #d3e2f8;
+}
+
+.pf-save {
+    gap: 7px;
+    color: white;
+    background: #006bff;
+    border: none;
+    cursor: pointer;
+}
+
+.pf-save:hover {
+    background: #0059db;
+}
+
+.pf-save svg {
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linejoin: round;
+}
+
+.pf-error {
+    color: #e32b44;
+    font-size: 10px;
+}
+
+.pf-alert {
+    margin-bottom: 12px;
+    padding: 10px;
+    border: 1px solid #ffd0d7;
+    border-radius: 5px;
+    background: #fff1f3;
+    color: #b72a41;
+    font-size: 11px;
+}
+
+@media (max-width: 850px) {
+    .pf-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .pf-heading {
+        flex-wrap: wrap;
+    }
+
+    .pf-heading h1 {
+        font-size: 21px;
+    }
+
+    .pf-card {
+        padding: 11px;
+    }
+
+    .pf-actions {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 420px) {
+    .pf-actions {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .pf-cancel,
+    .pf-save {
+        width: 100%;
+    }
+}

@@ -1,0 +1,79 @@
+/* Shared active and inactive status toggle */
+.status-toggle-control {
+    width: 100%;
+}
+
+.status-toggle-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    min-height: 42px;
+    padding: 8px 12px;
+    border: 1px solid;
+    border-radius: 8px;
+    font: inherit;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.status-toggle-button.is-active {
+    background: #e8f7ee;
+    border-color: #b9e5c8;
+    color: #176b3c;
+}
+
+.status-toggle-button.is-inactive {
+    background: #f1f3f6;
+    border-color: #d8dde5;
+    color: #5c6674;
+}
+
+.status-toggle-track {
+    display: inline-flex;
+    align-items: center;
+    width: 30px;
+    height: 16px;
+    padding: 2px;
+    border-radius: 999px;
+    background: #9299a5;
+    flex: 0 0 30px;
+    transition: background-color 160ms ease;
+}
+
+.status-toggle-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    transform: translateX(0);
+    transition: transform 160ms ease;
+}
+
+.status-toggle-button.is-active .status-toggle-track {
+    background: #24a45a;
+}
+
+.status-toggle-button.is-active .status-toggle-thumb {
+    transform: translateX(14px);
+}
+
+.status-toggle-button:focus-visible {
+    outline: 2px solid #1769ef;
+    outline-offset: 2px;
+}
+
+.status-toggle-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .status-toggle-button,
+    .status-toggle-track,
+    .status-toggle-thumb {
+        transition: none;
+    }
+}

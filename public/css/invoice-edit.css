@@ -1,0 +1,228 @@
+
+/* Invoice edit layout and fields */
+.iv-edit-page {
+    padding: 24px;
+    color: #1b3554;
+}
+
+.iv-edit-header,
+.iv-section-heading,
+.iv-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.iv-edit-header {
+    margin-bottom: 24px;
+}
+
+.iv-edit-header h1 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.iv-edit-header p {
+    color: #73869d;
+    margin: 6px 0 0;
+}
+
+.iv-panel {
+    background: #fff;
+    border: 1px solid #e4ebf3;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 22px;
+    box-shadow: 0 3px 14px rgba(24, 58, 94, .04);
+}
+
+.iv-panel h2 {
+    font-size: 18px;
+    margin: 0 0 20px;
+}
+
+.iv-form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.iv-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.iv-field label {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.iv-field input,
+.iv-field select,
+.iv-field textarea,
+.iv-edit-table input,
+.iv-edit-table select {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #dce5ef;
+    border-radius: 7px;
+    background: #fff;
+    color: #243b53;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+.iv-field input:focus,
+.iv-field select:focus,
+.iv-edit-table input:focus,
+.iv-edit-table select:focus {
+    outline: none;
+    border-color: #24618d;
+}
+
+.iv-table-scroll {
+    overflow-x: auto;
+}
+
+.iv-edit-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    min-width: 740px;
+}
+
+.iv-edit-table th {
+    background: #edf3f9;
+    text-align: left;
+    padding: 14px;
+    font-size: 13px;
+    color: #425a72;
+}
+
+.iv-edit-table td {
+    padding: 12px;
+    border-bottom: 1px solid #e8eef5;
+}
+
+.iv-edit-table td:first-child {
+    min-width: 190px;
+}
+
+.iv-edit-table td:nth-child(3) {
+    width: 110px;
+}
+
+.iv-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 18px;
+    border-radius: 7px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 600;
+}
+
+.iv-btn-primary {
+    background: #24618d;
+    color: #fff;
+}
+
+.iv-btn-primary:hover {
+    background: #194a70;
+}
+
+.iv-btn-light {
+    background: #edf3f9;
+    color: #244563;
+}
+
+.iv-remove {
+    border: 0;
+    background: #fff0f0;
+    color: #c0392b;
+    border-radius: 6px;
+    padding: 9px 12px;
+    cursor: pointer;
+}
+
+.iv-total {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+    padding: 22px 0 0;
+}
+
+.iv-total strong {
+    font-size: 22px;
+    color: #194a70;
+}
+
+.iv-actions {
+    justify-content: flex-end;
+}
+
+.iv-alert {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    background: #fff1f1;
+    border: 1px solid #f5cccc;
+    border-radius: 8px;
+    color: #a12b2b;
+}
+
+@media (max-width: 900px) {
+    .iv-form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .iv-edit-page {
+        padding: 14px;
+    }
+
+    .iv-edit-header,
+    .iv-section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .iv-panel {
+        padding: 16px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .iv-table-scroll {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .iv-edit-table {
+        min-width: 620px;
+    }
+
+    .iv-actions {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .iv-actions .iv-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .iv-total {
+        justify-content: space-between;
+        gap: 12px;
+    }
+}

@@ -1,0 +1,254 @@
+
+/* ADD / EDIT CATEGORY */
+
+.cf-page,
+.cf-page * {
+    box-sizing: border-box;
+}
+
+.cf-page {
+    width: 100%;
+    min-width: 0;
+    color: #071b4c;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.cf-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.cf-heading h1 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 750;
+}
+
+.cf-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #6a87b7;
+    font-size: 11px;
+}
+
+.cf-breadcrumb a {
+    color: #6a87b7;
+    text-decoration: none;
+}
+
+.cf-card {
+    padding: 19px;
+    background: white;
+    border: 1px solid #dce9fa;
+    border-radius: 9px;
+    box-shadow: 0 3px 12px rgba(18, 70, 130, .05);
+}
+
+.cf-card-heading {
+    padding-bottom: 12px;
+    margin-bottom: 17px;
+    border-bottom: 1px solid #e6eef9;
+}
+
+.cf-card-heading h2 {
+    margin: 0 0 5px;
+    font-size: 17px;
+    font-weight: 750;
+}
+
+.cf-card-heading p {
+    margin: 0;
+    font-size: 12px;
+    color: #6985ae;
+}
+
+.cf-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.cf-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.cf-field label {
+    color: #071b4c;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.cf-field label span {
+    color: #f02b45;
+}
+
+.cf-input-group {
+    display: flex;
+    align-items: stretch;
+    min-height: 38px;
+    width: 100%;
+    border: 1px solid #d3e3fa;
+    border-radius: 5px;
+    overflow: hidden;
+    background: white;
+}
+
+.cf-input-group:focus-within {
+    border-color: #006bff;
+    box-shadow: 0 0 0 3px rgba(0, 107, 255, .07);
+}
+
+.cf-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 44px;
+    color: #284d8b;
+    border-right: 1px solid #e0eaf7;
+    background: #fbfdff;
+}
+
+.cf-icon svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.cf-input-group input,
+.cf-input-group select,
+.cf-input-group textarea {
+    width: 100%;
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #112e67;
+    font-family: inherit;
+    font-size: 12px;
+}
+
+.cf-input-group input,
+.cf-input-group select {
+    min-height: 37px;
+    padding: 8px 12px;
+}
+
+.cf-input-group textarea {
+    min-height: 74px;
+    padding: 12px;
+    resize: vertical;
+}
+
+.cf-textarea-group .cf-icon {
+    align-items: flex-start;
+    padding-top: 11px;
+}
+
+.cf-input-group input::placeholder,
+.cf-input-group textarea::placeholder {
+    color: #7b95be;
+}
+
+.cf-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #e6eef9;
+}
+
+.cf-cancel,
+.cf-save {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 37px;
+    padding: 0 18px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cf-cancel {
+    background: white;
+    color: #274a84;
+    border: 1px solid #cddff6;
+}
+
+.cf-save {
+    gap: 8px;
+    background: #006bff;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+.cf-save:hover {
+    background: #0058d9;
+}
+
+.cf-save svg {
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.cf-error {
+    color: #e22b45;
+    font-size: 11px;
+}
+
+.cf-error-summary {
+    margin-bottom: 14px;
+    padding: 10px 12px;
+    color: #ba2942;
+    background: #fff0f2;
+    border: 1px solid #ffd0d7;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+@media (max-width: 650px) {
+    .cf-heading {
+        flex-wrap: wrap;
+    }
+
+    .cf-card {
+        padding: 14px;
+    }
+
+    .cf-heading h1 {
+        font-size: 21px;
+    }
+}
+
+
+@media (max-width: 420px) {
+    .cf-actions {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .cf-cancel,
+    .cf-save {
+        width: 100%;
+    }
+}

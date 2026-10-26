@@ -1,0 +1,39 @@
+
+/* Edit User Page */
+/* Reuses user-create.css to keep the same design. */
+
+.uc-page .uc-heading h1 {
+    color: #143d78;
+}
+
+.uc-page .uc-input-wrap input:focus,
+.uc-page .uc-input-wrap select:focus {
+    outline: none;
+    border-color: #1769e9;
+}
+
+.uc-page .uc-save {
+    cursor: pointer;
+}
+
+.uc-page .uc-save:hover {
+    filter: brightness(0.94);
+}
+
+.uc-page .uc-preview-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.uc-page .uc-preview-avatar img[hidden],
+.uc-page .uc-preview-avatar svg[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .uc-page .uc-actions {
+        flex-wrap: wrap;
+    }
+}

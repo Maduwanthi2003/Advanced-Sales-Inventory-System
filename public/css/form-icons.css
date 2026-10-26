@@ -1,0 +1,53 @@
+/* Shared form field icon styling */
+.cc-icon,
+.sf-input-icon,
+.cf-icon,
+.pf-icon,
+.uc-input-icon,
+.create-role-field-icon,
+.pu-input-icon,
+.pay-input-icon > span:not(.pay-currency-prefix) {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center !important;
+    justify-content: center;
+    align-self: stretch;
+    flex: 0 0 39px;
+    width: 39px;
+    min-width: 39px;
+    padding: 0 !important;
+    border-right: 1px solid #e1eaf5;
+    background: #fbfdff;
+    color: #45699a;
+}
+
+.cc-icon svg,
+.sf-input-icon svg,
+.cf-icon svg,
+.pf-icon svg,
+.uc-input-icon svg,
+.create-role-field-icon svg,
+.pu-input-icon svg,
+.pay-input-icon > span:not(.pay-currency-prefix) svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.login-form .input-wrap > svg {
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+    color: #45699a;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}

@@ -1,0 +1,297 @@
+
+/* ==========================================
+   WEBADMIN - ADD CUSTOMER PAGE
+========================================== */
+
+.cc-page,
+.cc-page * {
+    box-sizing: border-box;
+}
+
+.cc-page {
+    width: 100%;
+    min-width: 0;
+    color: #0a1d4c;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.cc-page-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    margin-bottom: 12px;
+}
+
+.cc-page-heading h1 {
+    margin: 0;
+    color: #081b49;
+    font-size: 25px;
+    font-weight: 750;
+    letter-spacing: -0.6px;
+}
+
+.cc-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #6b87b0;
+    font-size: 11px;
+}
+
+.cc-breadcrumb a {
+    color: #6b87b0;
+    text-decoration: none;
+}
+
+.cc-breadcrumb a:hover {
+    color: #0878ff;
+}
+
+.cc-card {
+    background: #ffffff;
+    border: 1px solid #dbe9f9;
+    border-radius: 9px;
+    padding: 15px;
+    box-shadow: 0 3px 14px rgba(23, 75, 140, 0.06);
+}
+
+.cc-card-heading {
+    border-bottom: 1px solid #eaf0f8;
+    padding-bottom: 12px;
+    margin-bottom: 13px;
+}
+
+.cc-card-heading h2 {
+    margin: 0 0 4px;
+    color: #0a1d4c;
+    font-size: 16px;
+    font-weight: 750;
+}
+
+.cc-card-heading p {
+    margin: 0;
+    color: #6480a6;
+    font-size: 11.5px;
+}
+
+.cc-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 18px;
+}
+
+.cc-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 0;
+}
+
+.cc-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cc-field label {
+    color: #0b2052;
+    font-size: 11.5px;
+    font-weight: 700;
+}
+
+.cc-field label span {
+    color: #fa344f;
+}
+
+.cc-control {
+    display: flex;
+    align-items: stretch;
+    min-height: 35px;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #d6e3f4;
+    border-radius: 5px;
+    background: #ffffff;
+    transition: border-color .2s, box-shadow .2s;
+}
+
+.cc-control:focus-within {
+    border-color: #0878ff;
+    box-shadow: 0 0 0 3px rgba(8, 120, 255, 0.08);
+}
+
+.cc-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 39px;
+    flex-shrink: 0;
+    border-right: 1px solid #e1eaf5;
+    color: #45699a;
+    background: #fbfdff;
+}
+
+.cc-icon svg {
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.cc-control input,
+.cc-control select,
+.cc-control textarea {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #173c75;
+    font-family: inherit;
+    font-size: 11.5px;
+}
+
+.cc-control input,
+.cc-control select {
+    min-height: 34px;
+    padding: 7px 11px;
+}
+
+.cc-control textarea {
+    resize: vertical;
+    padding: 9px 11px;
+    line-height: 1.5;
+}
+
+.cc-control input::placeholder,
+.cc-control textarea::placeholder {
+    color: #839abb;
+}
+
+.cc-textarea-control .cc-icon {
+    align-items: flex-start;
+    padding-top: 10px;
+}
+
+.cc-control select {
+    cursor: pointer;
+}
+
+.cc-error {
+    color: #e2354d;
+    font-size: 11px;
+}
+
+.cc-error-summary {
+    padding: 10px 12px;
+    margin-bottom: 14px;
+    border: 1px solid #ffcad2;
+    border-radius: 5px;
+    background: #fff1f3;
+    color: #bd2942;
+    font-size: 12px;
+}
+
+.cc-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 11px;
+    margin-top: 21px;
+    padding-top: 13px;
+    border-top: 1px solid #e5edf8;
+}
+
+.cc-cancel-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 35px;
+    padding: 0 17px;
+    border: 1px solid #cdddf0;
+    border-radius: 5px;
+    background: #ffffff;
+    color: #315582;
+    font-size: 11.5px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cc-cancel-btn:hover {
+    background: #f2f7ff;
+}
+
+.cc-save-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 35px;
+    padding: 0 17px;
+    border: none;
+    border-radius: 5px;
+    background: #0878ff;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 11.5px;
+    font-weight: 650;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(8, 120, 255, 0.2);
+}
+
+.cc-save-btn:hover {
+    background: #0066e6;
+}
+
+.cc-save-btn svg {
+    width: 15px;
+    height: 15px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+@media (max-width: 850px) {
+    .cc-form-grid {
+        grid-template-columns: 1fr;
+        row-gap: 12px;
+    }
+
+    .cc-page-heading {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .cc-card {
+        padding: 12px;
+    }
+
+    .cc-page-heading h1 {
+        font-size: 21px;
+    }
+
+    .cc-actions {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 420px) {
+    .cc-actions {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .cc-cancel-btn,
+    .cc-save-btn {
+        width: 100%;
+    }
+}

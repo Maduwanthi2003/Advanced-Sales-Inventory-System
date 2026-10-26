@@ -1,0 +1,41 @@
+
+/* Role edit notices and disabled controls */
+.role-edit-notice {
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border: 1px solid #cfe0fa;
+    border-radius: 5px;
+    background: #eaf5ff;
+    color: #17499a;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.create-role-page input[readonly] {
+    background: #f4f7fc;
+    color: #6f82a5;
+    cursor: not-allowed;
+}
+
+.create-role-page select:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.create-role-page
+.create-role-permission-checkbox:disabled {
+    cursor: not-allowed;
+}
+
+.create-role-page
+.create-role-permission-checkbox:disabled + span {
+    opacity: 0.75;
+}
+
+.create-role-page
+.create-role-save:focus-visible,
+.create-role-page
+.create-role-cancel:focus-visible {
+    outline: 3px solid rgba(8, 97, 255, 0.3);
+    outline-offset: 2px;
+}

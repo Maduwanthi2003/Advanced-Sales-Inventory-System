@@ -1,0 +1,448 @@
+/* Shared button styles */
+.wa-content :is(a, button):is(
+    .users-add-btn,
+    .um-add-button,
+    .customer-primary-btn,
+    .cat-add-btn,
+    .supplier-primary-btn,
+    .pr-add,
+    .pu-add,
+    .pu-primary-btn,
+    .iv-primary-btn,
+    .iv-btn-primary,
+    .cf-save,
+    .cc-save-btn,
+    .pf-save,
+    .sf-save-btn,
+    .uc-save,
+    .create-role-save,
+    .roles-primary-btn,
+    .create-invoice-btn,
+    .pay-add,
+    .pay-btn-primary,
+    .cs-btn-primary
+),
+.sign-in-btn {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 40px;
+    height: auto;
+    max-width: 100%;
+    padding: 0 16px;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    white-space: normal;
+}
+
+.wa-content :is(a, button):is(
+    .customer-cancel-btn,
+    .cf-cancel,
+    .pf-cancel,
+    .sf-cancel-btn,
+    .uc-cancel,
+    .create-role-cancel,
+    .iv-cancel-btn,
+    .iv-btn-light,
+    .pu-cancel,
+    .pu-cancel-btn,
+    .pay-btn-outline,
+    .pay-btn-danger,
+    .uv-back-btn,
+    .uv-edit-btn
+),
+.wa-content :is(a, button).cs-btn:not(.cs-btn-primary),
+.toolbar :is(a, button),
+.toolbar .btn,
+.print-btn {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 38px;
+    height: auto;
+    max-width: 100%;
+    padding: 0 15px;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    white-space: normal;
+}
+
+.wa-content :is(
+    .customer-form-actions,
+    .cc-actions,
+    .cf-actions,
+    .pf-actions,
+    .sf-actions,
+    .uc-actions,
+    .iv-form-actions,
+    .pu-form-actions,
+    .pay-form-actions,
+    .pay-detail-actions,
+    .uv-heading-actions,
+    .sr-filter-buttons,
+    .sr-export-buttons,
+    .st-filter-actions,
+    .st-export-actions,
+    .cs-top-actions,
+    .cs-filter-actions
+) {
+    gap: 8px;
+}
+
+.wa-content :is(
+    .customer-search-form,
+    .cat-search,
+    .supplier-search
+) button,
+.wa-content :is(
+    .um-filter-button,
+    .pr-filter-submit,
+    .pu-filter-btn,
+    .iv-filter-btn,
+    .pay-filter-submit,
+    .pay-filter-reset,
+    .um-reset-button,
+    .sr-button,
+    .st-btn
+) {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-height: 36px;
+    height: auto;
+    padding: 0 13px;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.wa-content :is(
+    .um-actions,
+    .customer-actions,
+    .cat-actions,
+    .supplier-actions,
+    .pr-actions,
+    .iv-actions,
+    .pu-actions,
+    .roles-row-actions
+) {
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.wa-content :is(a, button):is(
+    .um-action-btn,
+    .customer-edit-btn,
+    .customer-delete-btn,
+    .cat-edit,
+    .cat-delete,
+    .supplier-edit,
+    .supplier-delete,
+    .pr-edit,
+    .pr-delete,
+    .roles-icon-btn,
+    .st-view,
+    .sr-eye
+),
+.wa-content .iv-table .iv-actions > a,
+.wa-content .iv-table .iv-actions > form > button,
+.wa-content .pu-table .pu-actions > a,
+.wa-content .pay-table td:last-child > .pay-link,
+.wa-content :is(.iv-items-table, .iv-edit-table) .iv-remove-item,
+.wa-content .pu-items-table .pu-remove-item {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 36px;
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+    padding: 0;
+    border-radius: 7px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.wa-content .view-invoice {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 36px;
+    min-width: 36px;
+    padding: 0 8px;
+    border-radius: 7px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.wa-content :is(.iv-table .iv-actions, .pu-table .pu-actions) {
+    justify-content: center;
+    gap: 8px;
+}
+
+.wa-content :is(.um-delete-form, .customer-actions form, .cat-actions form, .supplier-actions form, .pr-actions form, .roles-delete-form) {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+}
+
+.wa-content :is(.iv-action-disabled, .pu-action-disabled) {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 36px;
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+    border-radius: 7px;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.wa-content :is(
+    .um-actions,
+    .customer-actions,
+    .cat-actions,
+    .supplier-actions,
+    .pr-actions,
+    .st-view,
+    .roles-row-actions,
+    .iv-table .iv-actions,
+    .pu-table .pu-actions,
+    .pay-table td:last-child > .pay-link
+) svg {
+    width: 18px;
+    height: 18px;
+}
+
+.wa-content :is(
+    .um-action-btn,
+    .customer-edit-btn,
+    .customer-delete-btn,
+    .cat-edit,
+    .cat-delete,
+    .supplier-edit,
+    .supplier-delete,
+    .pr-edit,
+    .pr-delete,
+    .roles-icon-btn,
+    .st-view,
+    .sr-eye,
+    .iv-table .iv-actions > a,
+    .iv-table .iv-actions > form > button,
+    .pu-table .pu-actions > a,
+    .pay-table td:last-child > .pay-link
+) svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.wa-content :is(.sr-eye, .st-view, .view-invoice):hover,
+.wa-content :is(.iv-table .iv-actions > a, .pu-table .pu-actions > a, .pay-table td:last-child > .pay-link):hover {
+    filter: brightness(.94);
+}
+
+.wa-content :is(
+    .um-action-btn,
+    .customer-edit-btn,
+    .customer-delete-btn,
+    .cat-edit,
+    .cat-delete,
+    .supplier-edit,
+    .supplier-delete,
+    .pr-edit,
+    .pr-delete,
+    .roles-icon-btn,
+    .st-view,
+    .sr-eye,
+    .iv-table .iv-actions > a,
+    .iv-table .iv-actions > form > button,
+    .pu-table .pu-actions > a,
+    .pay-table td:last-child > .pay-link,
+    .iv-items-table .iv-remove-item,
+    .iv-edit-table .iv-remove-item,
+    .pu-items-table .pu-remove-item
+):disabled {
+    cursor: not-allowed;
+}
+
+.wa-content :is(a, button):is(
+    .users-add-btn,
+    .um-add-button,
+    .customer-primary-btn,
+    .cat-add-btn,
+    .supplier-primary-btn,
+    .pr-add,
+    .pu-add,
+    .pu-primary-btn,
+    .iv-primary-btn,
+    .iv-btn-primary,
+    .cf-save,
+    .cc-save-btn,
+    .pf-save,
+    .sf-save-btn,
+    .uc-save,
+    .create-role-save,
+    .roles-primary-btn,
+    .create-invoice-btn,
+    .pay-add,
+    .pay-btn-primary,
+    .cs-btn-primary,
+    .sr-primary,
+    .st-btn-primary,
+    .customer-cancel-btn,
+    .cf-cancel,
+    .pf-cancel,
+    .sf-cancel-btn,
+    .uc-cancel,
+    .create-role-cancel,
+    .iv-cancel-btn,
+    .iv-btn-light,
+    .pu-cancel,
+    .pu-cancel-btn,
+    .pay-btn-outline,
+    .pay-btn-danger,
+    .pay-filter-reset,
+    .um-reset-button,
+    .uv-back-btn,
+    .uv-edit-btn,
+    .sr-button,
+    .st-btn
+) svg,
+.toolbar :is(a, button) svg,
+.toolbar .btn svg,
+.print-btn svg,
+.sign-in-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+.wa-content :is(.cat-add-btn, .pr-add, .pay-add) span {
+    font-size: 16px;
+    line-height: 1;
+}
+
+.wa-content :is(a, button):is(
+    .users-add-btn,
+    .um-add-button,
+    .customer-primary-btn,
+    .cat-add-btn,
+    .supplier-primary-btn,
+    .pr-add,
+    .pu-add,
+    .pu-primary-btn,
+    .iv-primary-btn,
+    .iv-btn-primary,
+    .cf-save,
+    .cc-save-btn,
+    .pf-save,
+    .sf-save-btn,
+    .uc-save,
+    .create-role-save,
+    .roles-primary-btn,
+    .create-invoice-btn,
+    .pay-add,
+    .pay-btn-primary,
+    .cs-btn-primary,
+    .sr-primary,
+    .st-btn-primary,
+    .customer-cancel-btn,
+    .cf-cancel,
+    .pf-cancel,
+    .sf-cancel-btn,
+    .uc-cancel,
+    .create-role-cancel,
+    .iv-cancel-btn,
+    .iv-btn-light,
+    .pu-cancel,
+    .pu-cancel-btn,
+    .pay-btn-outline,
+    .pay-filter-reset,
+    .um-reset-button,
+    .uv-back-btn,
+    .sr-reset,
+    .st-btn-reset,
+    .st-btn-print
+):focus-visible,
+.wa-content :is(a, button).cs-btn:focus-visible,
+.wa-content :is(a, button):is(
+    .um-action-btn,
+    .customer-edit-btn,
+    .customer-delete-btn,
+    .cat-edit,
+    .cat-delete,
+    .supplier-edit,
+    .supplier-delete,
+    .pr-edit,
+    .pr-delete,
+    .roles-icon-btn,
+    .st-view,
+    .sr-eye
+):focus-visible,
+.wa-content .view-invoice:focus-visible,
+.wa-content .iv-table .iv-actions > a:focus-visible,
+.wa-content .iv-table .iv-actions > form > button:focus-visible,
+.wa-content .pu-table .pu-actions > a:focus-visible,
+.wa-content .pay-table td:last-child > .pay-link:focus-visible,
+.wa-content :is(.iv-items-table, .iv-edit-table) .iv-remove-item:focus-visible,
+.wa-content .pu-items-table .pu-remove-item:focus-visible,
+.wa-content .sr-button:focus-visible,
+.wa-content .st-btn:focus-visible,
+.sign-in-btn:focus-visible,
+.toolbar :is(a, button):focus-visible,
+.toolbar .btn:focus-visible,
+.print-btn:focus-visible {
+    outline: 2px solid #1769e9;
+    outline-offset: 2px;
+}
+
+.wa-content button:disabled,
+.wa-content [aria-disabled="true"],
+.sign-in-btn:disabled,
+.toolbar button:disabled,
+.print-btn:disabled {
+    cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+    .wa-content :is(
+        .um-actions,
+        .customer-actions,
+        .cat-actions,
+        .supplier-actions,
+        .pr-actions,
+        .iv-actions,
+        .pu-actions,
+        .roles-row-actions
+    ) {
+        flex-wrap: wrap;
+    }
+}

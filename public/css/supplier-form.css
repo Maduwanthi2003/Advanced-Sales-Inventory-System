@@ -1,0 +1,288 @@
+
+/* WEBADMIN - SUPPLIER FORM */
+
+.sf-page,
+.sf-page * {
+    box-sizing: border-box;
+}
+
+.sf-page {
+    width: 100%;
+    min-width: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #0a1d4c;
+}
+
+.sf-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 12px;
+}
+
+.sf-heading h1 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 750;
+    color: #081b49;
+}
+
+.sf-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #6b87b0;
+    font-size: 11px;
+}
+
+.sf-breadcrumb a {
+    color: #6b87b0;
+    text-decoration: none;
+}
+
+.sf-breadcrumb a:hover {
+    color: #0878ff;
+}
+
+.sf-card {
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #dbe9f9;
+    border-radius: 9px;
+    box-shadow: 0 3px 14px rgba(23, 75, 140, .06);
+}
+
+.sf-card-heading {
+    padding-bottom: 12px;
+    margin-bottom: 13px;
+    border-bottom: 1px solid #eaf0f8;
+}
+
+.sf-card-heading h2 {
+    margin: 0 0 4px;
+    font-size: 16px;
+    font-weight: 750;
+}
+
+.sf-card-heading p {
+    margin: 0;
+    color: #6480a6;
+    font-size: 11.5px;
+}
+
+.sf-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.sf-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 0;
+}
+
+.sf-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sf-field label {
+    color: #0b2052;
+    font-size: 11.5px;
+    font-weight: 700;
+}
+
+.sf-field label span {
+    color: #fa344f;
+}
+
+.sf-input-group {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    min-height: 35px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #d6e3f4;
+    border-radius: 5px;
+    transition: border-color .2s, box-shadow .2s;
+}
+
+.sf-input-group:focus-within {
+    border-color: #0878ff;
+    box-shadow: 0 0 0 3px rgba(8,120,255,.08);
+}
+
+.sf-input-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 39px;
+    color: #45699a;
+    background: #fbfdff;
+    border-right: 1px solid #e1eaf5;
+}
+
+.sf-input-icon svg {
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.sf-input-group input,
+.sf-input-group select,
+.sf-input-group textarea {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #173c75;
+    font: inherit;
+    font-size: 11.5px;
+}
+
+.sf-input-group input,
+.sf-input-group select {
+    min-height: 34px;
+    padding: 7px 11px;
+}
+
+.sf-input-group textarea {
+    padding: 9px 11px;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+.sf-input-group input::placeholder,
+.sf-input-group textarea::placeholder {
+    color: #839abb;
+}
+
+.sf-textarea-group .sf-input-icon {
+    align-items: flex-start;
+    padding-top: 10px;
+}
+
+.sf-error {
+    color: #e2354d;
+    font-size: 11px;
+}
+
+.sf-error-summary {
+    margin-bottom: 14px;
+    padding: 10px 12px;
+    background: #fff1f3;
+    color: #bd2942;
+    border: 1px solid #ffcad2;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.sf-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 11px;
+    margin-top: 21px;
+    padding-top: 13px;
+    border-top: 1px solid #e5edf8;
+}
+
+.sf-cancel-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 35px;
+    padding: 0 17px;
+    color: #315582;
+    background: #fff;
+    border: 1px solid #cdddf0;
+    border-radius: 5px;
+    font-size: 11.5px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.sf-cancel-btn:hover {
+    background: #f2f7ff;
+}
+
+.sf-save-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 35px;
+    padding: 0 17px;
+    color: #fff;
+    background: #0878ff;
+    border: 0;
+    border-radius: 5px;
+    font: inherit;
+    font-size: 11.5px;
+    font-weight: 650;
+    cursor: pointer;
+}
+
+.sf-save-btn:hover {
+    background: #0066e6;
+}
+
+.sf-save-btn svg {
+    width: 15px;
+    height: 15px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+@media (max-width: 850px) {
+    .sf-form-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .sf-heading {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .sf-card {
+        padding: 12px;
+    }
+
+    .sf-heading h1 {
+        font-size: 21px;
+    }
+
+    .sf-actions {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 420px) {
+    .sf-actions {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .sf-cancel-btn,
+    .sf-save-btn {
+        width: 100%;
+    }
+}

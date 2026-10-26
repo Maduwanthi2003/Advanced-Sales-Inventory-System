@@ -1,0 +1,442 @@
+
+/* WEBADMIN - CUSTOMERS */
+
+.customer-page,
+.customer-page * {
+    box-sizing: border-box;
+}
+
+.customer-page {
+    width: 100%;
+    min-width: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #0b2153;
+}
+
+.customer-page-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.customer-page-heading h1 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 750;
+    letter-spacing: -.5px;
+}
+
+.customer-page-heading > span {
+    color: #8195b3;
+    font-size: 12px;
+}
+
+.customer-page-heading b {
+    margin: 0 7px;
+    color: #b0c2d8;
+}
+
+.customer-page-heading a {
+    color: #6481aa;
+    text-decoration: none;
+}
+
+.customer-panel {
+    background: #fff;
+    border: 1px solid #dce9f8;
+    border-radius: 9px;
+    padding: 12px;
+    box-shadow: 0 3px 12px rgba(22, 72, 135, .06);
+}
+
+.customer-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    margin-bottom: 15px;
+}
+
+.customer-search-form {
+    display: flex;
+    align-items: center;
+    width: min(100%, 365px);
+    border: 1px solid #d5e2f2;
+    border-radius: 5px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.customer-search-icon {
+    padding-left: 12px;
+    color: #426ba0;
+    font-size: 23px;
+    line-height: 1;
+}
+
+.customer-search-form input {
+    width: 100%;
+    min-width: 0;
+    border: none;
+    outline: none;
+    padding: 9px 10px;
+    color: #173d76;
+    font: inherit;
+    font-size: 12px;
+}
+
+.customer-search-form input::placeholder {
+    color: #8198b7;
+}
+
+.customer-search-form button {
+    border: none;
+    background: #edf5ff;
+    color: #1766c8;
+    padding: 10px 12px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 650;
+}
+
+.customer-primary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-shrink: 0;
+    padding: 10px 17px;
+    border: 0;
+    border-radius: 5px;
+    background: #0878ff;
+    color: #fff;
+    font: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.customer-primary-btn:hover {
+    background: #0064dd;
+}
+
+.customer-primary-btn span {
+    font-size: 20px;
+    line-height: 13px;
+}
+
+.customer-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.customer-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.customer-table th {
+    padding: 12px 11px;
+    background: #edf5fc;
+    color: #102a59;
+    font-size: 11px;
+    font-weight: 750;
+    text-align: left;
+}
+
+.customer-table th:first-child {
+    text-align: center;
+    width: 42px;
+}
+
+.customer-table th:nth-last-child(2),
+.customer-table th:last-child {
+    text-align: center;
+}
+
+.customer-table td {
+    padding: 11px;
+    border-bottom: 1px solid #e8f0f9;
+    color: #294c81;
+}
+
+.customer-table td:first-child {
+    text-align: center;
+}
+
+.customer-table td:nth-last-child(2) {
+    text-align: center;
+}
+
+.customer-table tbody tr:hover {
+    background: #f8fbff;
+}
+
+.customer-name {
+    font-weight: 650;
+}
+
+.customer-status {
+    display: inline-block;
+    min-width: 72px;
+    padding: 5px 9px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 11px;
+}
+
+.customer-status.active {
+    background: #d6fae8;
+    color: #008b60;
+}
+
+.customer-status.inactive {
+    background: #ffe2e6;
+    color: #e12e45;
+}
+
+.customer-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.customer-actions form {
+    margin: 0;
+}
+
+.customer-edit-btn,
+.customer-delete-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    padding: 2px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.customer-edit-btn {
+    color: #0878ff;
+}
+
+.customer-delete-btn {
+    color: #ff294a;
+}
+
+.customer-edit-btn svg,
+.customer-delete-btn svg {
+    width: 17px;
+    height: 17px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.customer-empty {
+    text-align: center;
+    padding: 25px !important;
+    color: #8a9db8 !important;
+}
+
+.customer-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.customer-pagination p {
+    margin: 0;
+    font-size: 11px;
+    color: #365b91;
+}
+
+.customer-page-links {
+    font-size: 12px;
+}
+
+.customer-page-links nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.customer-alert {
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-bottom: 14px;
+    font-size: 13px;
+}
+
+.customer-alert-success {
+    background: #e0faed;
+    color: #087e59;
+}
+
+.customer-alert-error {
+    background: #ffe8eb;
+    color: #bd263d;
+}
+
+/* Create / Edit */
+
+.customer-form-panel {
+    padding: 24px;
+}
+
+.customer-form-heading {
+    margin-bottom: 23px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e5eef9;
+}
+
+.customer-form-heading h2 {
+    margin: 0 0 6px;
+    font-size: 18px;
+}
+
+.customer-form-heading p {
+    margin: 0;
+    color: #8294ae;
+    font-size: 13px;
+}
+
+.customer-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 19px;
+}
+
+.customer-field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.customer-field-full {
+    grid-column: 1 / -1;
+}
+
+.customer-field label {
+    font-size: 13px;
+    font-weight: 650;
+    color: #17345e;
+}
+
+.customer-field label span {
+    color: #e63855;
+}
+
+.customer-field input,
+.customer-field select,
+.customer-field textarea {
+    width: 100%;
+    border: 1px solid #d7e4f3;
+    border-radius: 6px;
+    padding: 11px 12px;
+    background: #fff;
+    color: #183967;
+    font: inherit;
+    font-size: 13px;
+    outline: none;
+}
+
+.customer-field input:focus,
+.customer-field select:focus,
+.customer-field textarea:focus {
+    border-color: #0878ff;
+    box-shadow: 0 0 0 3px rgba(8,120,255,.09);
+}
+
+.customer-field-error {
+    color: #d52c49;
+    font-size: 11px;
+}
+
+.customer-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 24px;
+    padding-top: 19px;
+    border-top: 1px solid #e5eef9;
+}
+
+.customer-cancel-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 19px;
+    border: 1px solid #d5e2f1;
+    border-radius: 5px;
+    color: #46668f;
+    background: #f5f8fd;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .customer-toolbar {
+        flex-wrap: wrap;
+    }
+
+    .customer-search-form {
+        width: 100%;
+    }
+
+    .customer-page-heading h1 {
+        font-size: 21px;
+    }
+
+    .customer-pagination {
+        flex-wrap: wrap;
+    }
+
+    .customer-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .customer-form-panel {
+        padding: 16px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .customer-search-form {
+        flex-wrap: wrap;
+    }
+
+    .customer-search-input-wrap {
+        width: 100%;
+    }
+
+    .customer-search-btn,
+    .customer-reset-btn,
+    .customer-primary-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .customer-form-actions {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .customer-cancel-btn {
+        width: 100%;
+    }
+}
